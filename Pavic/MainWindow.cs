@@ -23,17 +23,17 @@ namespace Pavic
 
         protected override void OnLoad(EventArgs e)
         {
-            //machine.Boot();
+            machine.Boot();
 
-            //return;
+            return;
 
-            renderer = new TextRenderer(Width, Height);
+            //renderer = new TextRenderer(Width, Height);
         }
 
         protected override void OnUnload(EventArgs e)
         {
             base.OnUnload(e);
-            renderer.Dispose();
+            //renderer.Dispose();
         }
 
         protected override void OnClosed(EventArgs e)
@@ -239,7 +239,7 @@ namespace Pavic
         protected override void OnRenderFrame(FrameEventArgs e)
         {
             
-            //return;
+            return;
             //renderer.Clear(Color.Black);
 
             
