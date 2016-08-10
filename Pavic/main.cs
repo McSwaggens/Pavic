@@ -1,7 +1,4 @@
 ﻿using System;
-using SFML.Window;
-using SFML.Graphics;
-using SFML.System;
 using System.IO;
 using PASM;
 
@@ -28,8 +25,8 @@ namespace Pavic
 			
 			
 			//Initialize the GPU
-			//GPU.gpu = new GPU (800, 600);
-			//GPU.gpu.HandleEvents ();
+			GPU.gpu = new GPU (800, 600);
+			GPU.gpu.HandleEvents ();
 			
 			
 			//Execute the bootStrap
