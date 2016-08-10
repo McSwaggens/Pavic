@@ -54,5 +54,8 @@
     <Reference Include="PASM">
       <HintPath>..\..\PashLang\PASM\bin\Debug\PASM.dll</HintPath>
     </Reference>
+    <Reference Include="stdlib">
+      <HintPath>..\..\PashLang\stdlib\bin\Debug\stdlib.dll</HintPath>
+    </Reference>
   </ItemGroup>
 </Project>

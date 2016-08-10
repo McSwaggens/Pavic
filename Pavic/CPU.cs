@@ -30,6 +30,7 @@ namespace Pavic
 			for (int i = 0; i < cores; i++)
 			{
 				engines[i] = new Engine ();
+				engines[i].ReferenceLibrary (typeof (GPU), typeof (CPU), typeof (stdlib.Standard));
 				engines[i].SetMemory (ram);
 			}
 		}
