@@ -30,7 +30,7 @@ namespace Pavic
 			for (int i = 0; i < cores; i++)
 			{
 				engines[i] = new Engine ();
-				engines[i].setMemory (ram);
+				engines[i].SetMemory (ram);
 			}
 		}
 		
