@@ -32,6 +32,8 @@
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="main.cs" />
+    <Compile Include="GPU.cs" />
+    <Compile Include="CPU.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="sfmlnet-audio-2">
@@ -45,6 +47,12 @@
     </Reference>
     <Reference Include="sfmlnet-graphics-2">
       <HintPath>..\..\workspace\SFML.Net-2.2\lib\sfmlnet-graphics-2.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK">
+      <HintPath>..\..\..\Downloads\opentk__\Binaries\OpenTK\Release\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="PASM">
+      <HintPath>..\..\PashLang\PASM\bin\Debug\PASM.dll</HintPath>
     </Reference>
   </ItemGroup>
 </Project>
