@@ -41,14 +41,16 @@ namespace Pavic
 		
 		public static void PushC (Engine engine, byte[] r, byte[] g, byte[] b)
 		{
-			Vertex v = gpu.vertexStack[gpu.vertexStack.Count];
-			v.Color = new Color (r[0], g[0], b[0]);
+			Vertex v = gpu.vertexStack[gpu.vertexStack.Count-1];
+			v.Color = new Color (r[0], g[0], b[0], 255);
+			gpu.vertexStack[gpu.vertexStack.Count-1] = v;
 		}
 		
-		public static void PushC_A (Engine engine, byte r, byte g, byte b, byte a)
+		public static void PushC_A (Engine engine, byte[] r, byte[] g, byte[] b, byte[] a)
 		{
-			Vertex v = gpu.vertexStack[gpu.vertexStack.Count];
-			v.Color = new Color (r, g, b, a);
+			Vertex v = gpu.vertexStack[gpu.vertexStack.Count-1];
+			v.Color = new Color (r[0], g[0], b[0], a[0]);
+			gpu.vertexStack[gpu.vertexStack.Count-1] = v;
 		}
 		
 		public static void Pop (Engine engine)
