@@ -4,6 +4,7 @@ using PASM;
 using SFML.Graphics;
 using SFML.System;
 using SFML.Window;
+using static System.BitConverter;
 
 namespace Pavic
 {
@@ -36,7 +37,7 @@ namespace Pavic
 		
 		public static void Push (Engine engine, byte[] x, byte[] y)
 		{
-			gpu.vertexStack.Add (new Vertex (new Vector2f(x[0], y[0])));
+			gpu.vertexStack.Add (new Vertex (new Vector2f(ToInt32(x, 0), ToInt32(y, 0))));
 		}
 		
 		public static void PushC (Engine engine, byte[] r, byte[] g, byte[] b)
